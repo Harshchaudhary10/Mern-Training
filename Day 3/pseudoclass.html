@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <link rel="stylesheet" href="pseudoclass.css">
+</head>
+<body>
+    <button> Submit</button>
+    <!-- Position: Static (Default) -->
+    <div class="container static">
+        <p>
+          This is positioned statically. It follows the normal flow of the
+          document.
+        </p>
+      </div>
+  
+      <!-- Position: Relative -->
+      <div class="container relative">
+        <p>
+          This is positioned relatively. It's offset by 30px from the top and 50px
+          from the left of its normal position.
+        </p>
+        <!-- Position: Absolute within Relative -->
+        <div class="absolute">
+          <p>
+            This is positioned absolutely within its relative parent. It's offset
+            by 50px from the top and left of the relative parent.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Position: Fixed -->
+      <div class="container fixed">
+        <p>
+          This is positioned fixed. It's always 50px from the top and right of the
+          viewport.
+        </p>
+      </div>
+  
+      <!-- Position: Sticky -->
+      <div class="sticky-container">
+        <div style="height: 100px">Scroll down to see the sticky element.</div>
+        <div class="sticky">
+          <p>
+            This is a sticky element. It remains sticky at the top after scrolling
+            down 50px.
+          </p>
+        </div>
+        <div style="height: 800px">Some content to scroll through.</div>
+      </div>
+</body>
+</html>

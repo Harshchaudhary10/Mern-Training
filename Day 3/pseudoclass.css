@@ -1,0 +1,85 @@
+button{
+    position: absolute;
+    scale: 2;
+    top: 50%;
+    left: 50%;
+    animation-name:button-animation-type-1 ;
+    padding: 8px 16px;
+    /* font-size: 24px;
+    border-radius: 6px;
+    border: 0%;
+    transition-property:scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms; */
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+/* button:hover{
+   background-color: blueviolet;
+   font-size: 30px;
+
+} */
+@keyframes button-animation-type-1{
+    0%{
+        top: 60px;
+        left:40px;
+    }
+    30%{
+        top:60px;
+        left:200px;
+    }
+    60%{
+        top:10px;
+        left:60px
+    }
+    100%{
+        top:70px;
+        left:80px;
+    }
+}
+/* Base styling for containers */
+.container {
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+
+  /* Position: Relative */
+  .relative {
+    position: relative;
+    padding: 20px;
+    background-color: lightblue;
+  }
+
+  /* Position: Absolute */
+  .absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    background-color: lightgreen;
+  }
+
+  /* Position: Fixed */
+  .fixed {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    padding: 20px;
+    background-color: lightcoral;
+  }
+
+  /* Position: Sticky */
+  .sticky-container {
+    height: 500px; /* Ensure enough height for scrolling */
+    overflow-y: scroll; /* Enable vertical scrollbar */
+    margin-top: 20px;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 50px; /* Stick to the top after scrolling 50px */
+    padding: 20px;
+    background-color: lightskyblue;
+    margin-bottom: 400px; /* Just for demonstration */
+  }
